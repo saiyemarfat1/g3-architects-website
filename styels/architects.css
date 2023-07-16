@@ -11,16 +11,16 @@
     margin: 0;
 }
 .btn-primary {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 180px;
-    height: 64px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 20px 25px;
     border-radius: 8px;
     background: #FF900E;
-    border: none;
+    border: 0;
     color: #FFF;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* header styels */
@@ -39,7 +39,6 @@ nav {
     color: #131313;
     font-size: 3rem;
     font-weight: 700;
-
 
 }
 
@@ -72,6 +71,7 @@ nav li a {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin-top: 80px;
 
 }
 
@@ -81,10 +81,28 @@ nav li a {
     font-weight: 400;
     line-height: 26px;
     margin-top: 10px;
-
 }
 
-
-.banner-img"{
-    margin
+.banner-img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* resoponsive media quiries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
