@@ -1,5 +1,6 @@
 /* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
 /* Shared Styels */
 * {
     font-family: 'Lato', sans-serif;
@@ -10,6 +11,7 @@
     padding: 0;
     margin: 0;
 }
+
 .btn-primary {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -83,26 +85,75 @@ nav li a {
     margin-top: 10px;
 }
 
-.banner-img{
+.banner-img {
     margin-top: 20px;
     width: 100%;
 }
+
+/* main styels */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* teams styels */
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    color: var(--dark-03, #727272);
+    font-size: 3rem;
+}
+.teams-title .quic-list{
+    columns: #727272;
+    font-weight: 500;
+
+}
+.teams-title .teams-feature{
+    color: #FF900E;
+    font-weight: 700px;
+}
+.teams-title .teams-our{
+    color: #131313;
+    font-weight: 700;
+}
+
+
+
+
 /* resoponsive media quiries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
+
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
