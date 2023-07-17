@@ -25,6 +25,14 @@
     cursor: pointer;
 }
 
+.text-light-gray {
+    color: #727272;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+
+}
+
 /* header styels */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -142,8 +150,70 @@ main {
     margin-top: 24px;
 }
 
+/* features section styels */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 120px;
+}
+
+.features-img img {
+    height: 80%;
+    margin-left: 50px;
+}
+
+.features .card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.features .h4 {
+    font-size: 20px;
+}
+
+.fetures-section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+
+}
+
+.features-description {
+    margin-left: 25px;
+    color: #727272;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.ten-years-badge {
+    padding: 40px;
+    border-radius: 8px;
+    color: white;
+    background: #FF900E;
+    width: 342px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+}
+
+/* facts section styels */
 .facts {
-    margin: 70px;
+    margin: 20px;
 }
 
 .fats-title {
@@ -228,12 +298,12 @@ main {
 
 .footer-text {
     margin-top: 45px;
-    color:  #424242;
+    color: #424242;
     font-size: 1.25rem;
     font-weight: 400;
-    
 
 }
+
 
 
 
@@ -245,15 +315,34 @@ main {
     }
 
     nav,
+    .features,
     .sponsor-img-container,
     .teams-container,
     .facts-card-container {
         flex-direction: column;
     }
 
+    .features-img img {
+        width: 83%;
+        margin-left: 0;
+        margin-top: 30px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .features {
+        margin-top: 50px;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 250px;
+    }
+
     .teams-img-container {
         grid-template-columns: 1fr;
     }
+
 
     .banner-title {
         font-size: 3.25rem;
@@ -278,11 +367,12 @@ main {
     .facts {
         margin: 30px;
     }
-    .footer-text{
-    margin-top: 20px;
-    color:  #424242;
-    text-align: center;
-    
+
+    .footer-text {
+        margin-top: 20px;
+        color: #424242;
+        text-align: center;
+
     }
 
 }
@@ -294,13 +384,17 @@ main {
     }
 
     nav,
+    .features,
     .sponsor-img-container,
     .teams-container {
         flex-direction: column;
     }
-
-    .facts-card-container .card {
-        margin-left: 5px;
-        margin-right: 5px;
+    .features{
+        gap: 20px;
     }
+    .facts{
+        margin-top: 0px;
+        margin-top: 0px;
+    }  
+    
 }
